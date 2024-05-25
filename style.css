@@ -19,10 +19,6 @@ body{
     color: white;
     width: 100%;
     height: 100vh;
-
-    /* background-image: url(https://www.facebook.com/images/fb_icon_325x325.png);
-    background-position: center;
-    background-size: cover; */
 }
 
 nav{
@@ -42,8 +38,39 @@ nav ul{
 nav li{
     display: inline-block;
 
-    margin-left: 50px;
+    margin-left: 40px;
 
     font-weight: 350;
+    font-size: 20px;
+}
+
+.eyecatcher{
+    display: inline-block;
+
+    margin-top: 15%;
+}
+
+.skill-preview{
+    font-size: 40px;
+    font-weight: 370;
+    margin: 0;
+}
+
+.introduction{
+    margin: 0;
+    font-size: 55px;
+}
+
+.introduction span{
+    font-size: 10px;
+    font-weight: 200;
+
+    position: relative;
+    left: -10px;
+
+    transition: .2s;
+}
+
+.introduction:hover span{
     font-size: 20px;
 }
