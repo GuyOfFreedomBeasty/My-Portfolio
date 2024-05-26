@@ -222,3 +222,68 @@ nav li a{
 #info section.selected-section{
     display: initial;
 }
+
+/* Services */
+
+#services{
+    margin-top: 70px;
+}
+
+#services .title{
+    font-size: 55px;
+    font-weight: 650;
+}
+
+.services-list{
+    display: flex;
+    justify-content: space-between;
+
+    list-style: none;
+
+    margin-top: 30px;
+}
+
+.services-list li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+
+    width: 100px;
+    height: 370px;
+
+    flex-basis: 31%;
+
+    background-color: #292929;
+    border-radius: 10px;
+
+    padding: 10px 3%;
+
+    transition: .3s;
+}
+
+.services-list li:hover{
+    background-color: #353535;
+    transform: translateY(-7px);
+}
+
+.services-list li h1{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.services-list li p{
+    margin-top: 25px;
+    font-size: 15px;
+    font-weight: 450;
+
+    margin-bottom: 20px;
+}
+
+.services-list li a{
+    font-weight: 300;
+}
+
+.services-list i{
+    font-size: 60px;
+}
