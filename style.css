@@ -144,10 +144,6 @@ nav li a{
     background-position: bottom;
 }
 
-body:has(h1:hover){
-    cursor: url("images/heart.ico"), default;
-}
-
 #info{
     flex-basis: 66%;
 }
@@ -179,6 +175,10 @@ body:has(h1:hover){
     margin-right: 50px;
 
     position: relative;
+}
+
+#info li:hover{
+    cursor: pointer;
 }
 
 #info li::after{
