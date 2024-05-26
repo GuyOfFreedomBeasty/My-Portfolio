@@ -4,6 +4,8 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
     color: white;
+    margin: 0;
+    padding: 0;
 }
 
 body{
@@ -28,7 +30,7 @@ html{
 }
 
 .container{
-    padding: 0 10%;
+    padding: 20px 10%;
 }
 
 nav{
@@ -141,9 +143,37 @@ nav li a{
     background-image: url(images/ProfilePicture.png);
     background-repeat: no-repeat;
     background-position: bottom;
+}
 
+body:has(h1:hover){
+    cursor: url("images/heart.ico"), default;
 }
 
 #info{
     flex-basis: 66%;
+}
+
+#info h1{
+    font-size: 60px;
+    font-weight: 600;
+    color: rgb(220, 220, 220);
+}
+
+#info p{
+    font-size: 17px;
+    color: rgb(220, 220, 220);
+}
+
+#info ul{
+    list-style-type: none;
+
+    margin-top: 40px;
+}
+
+#info li{
+    font-size: 18px;
+    font-weight: 500;
+    
+    color: rgb(220, 220, 220);
+    a
 }
