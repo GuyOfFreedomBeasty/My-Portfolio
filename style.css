@@ -9,7 +9,6 @@
 }
 
 body{
-    margin: 0;
     background-color: #080808;
 }
 
@@ -156,12 +155,12 @@ body:has(h1:hover){
 #info h1{
     font-size: 60px;
     font-weight: 600;
-    color: rgb(220, 220, 220);
+    color: rgb(199, 199, 199);
 }
 
 #info p{
     font-size: 17px;
-    color: rgb(220, 220, 220);
+    color: rgb(199, 199, 199);
 }
 
 #info ul{
@@ -174,6 +173,52 @@ body:has(h1:hover){
     font-size: 18px;
     font-weight: 500;
     
-    color: rgb(220, 220, 220);
-    a
+    color: rgb(199, 199, 199);
+    
+    display: inline-block;
+    margin-right: 50px;
+
+    position: relative;
+}
+
+#info li::after{
+    content: "";
+    
+    background-color: #00ced1;
+    width: 0%;
+    height: 2px;
+
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+
+    transition: .2s;
+}
+
+#info li.selected-section-choise::after{
+    width: 100%;
+}
+
+#info div{
+    margin-top: 25px;
+}
+
+#info div .mini-title{
+    margin-bottom: 8px;
+    color: #00ced1;
+    font-weight: 500;
+
+    text-transform: capitalize;
+}
+
+#info div .info{
+    font-size: 18px;
+}
+
+#info section{
+    display: none;
+}
+
+#info section.selected-section{
+    display: initial;
 }
