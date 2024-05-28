@@ -247,7 +247,6 @@ nav li a{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: baseline;
 
     width: 100%;
     height: 370px;
@@ -255,7 +254,7 @@ nav li a{
     margin-left: 30px;
 
     background-color: #292929;
-    border-radius: 10px;
+    border-radius: 15px;
 
     padding: 10px 3%;
 
@@ -290,4 +289,54 @@ nav li a{
 
 .services-list i{
     font-size: 60px;
+}
+
+/* Portfolio */
+
+#portfolio{
+    margin-top: 100px;
+}
+
+#portfolio h1{
+    font-size: 55px;
+    font-weight: 650;
+}
+
+#portfolio ul{
+    display: flex;
+    justify-content: space-between;
+
+    list-style: none;
+
+    margin-top: 30px;
+}
+
+#portfolio li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 100%;
+    height: 600px;
+
+    margin-left: 30px;
+    padding: 10px 3%;
+    border-radius: 15px;
+
+    background-image: url(images/ProfilePicture.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-color: #292929;
+
+    transition: .3s;
+}
+
+#portfolio li:first-child{
+    margin-left: 0;
+}
+
+#portfolio button{
+    color: black;
+
+    margin: auto;
 }
