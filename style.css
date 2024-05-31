@@ -314,7 +314,7 @@ nav li a{
 #portfolio li{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
 
     width: 100%;
     height: 600px;
@@ -327,16 +327,54 @@ nav li a{
     background-repeat: no-repeat;
     background-position: bottom;
     background-color: #292929;
+    opacity: .8;
 
     transition: .3s;
+}
+
+#portfolio li div{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+
+    background-color: #000000;
+    opacity: 0;
+
+    transition: .3s;
+}
+
+#portfolio li:hover{
+    transform: scale(1.1);
+
+    opacity: 1;
+}
+
+#portfolio li:hover div{
+    opacity: 1;
 }
 
 #portfolio li:first-child{
     margin-left: 0;
 }
 
-#portfolio button{
-    color: black;
+.btn{
+    display: block;
+    margin: 45px auto;
 
-    margin: auto;
+    width: fit-content;
+ 
+    text-decoration: none;
+    padding: 15px 50px;
+    border-radius: 5px;
+    border: 2px solid #00ced1;
+
+    transition: .15s;
+}
+
+.btn:hover{
+    background: #00ced1;
+    color: black;
 }
