@@ -378,3 +378,49 @@ nav li a{
     background: #00ced1;
     color: black;
 }
+
+/* Contact Me */
+
+#contact-me .row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-left{
+    flex-basis: 35%;
+}
+
+.contact-left h1{
+    font-size: 60px;
+}
+
+.contact-left p{
+    font-size: 16px;
+
+    margin-top: 25px;
+}
+
+.contact-left p i{
+    font-size: 25px;
+    color: #00ced1;
+ 
+    margin-right: 10px;
+}
+
+.contact-left ul{
+    display: flex;
+    list-style: none;
+
+    margin-top: 30px;
+}
+
+.contact-left li{
+    font-size: 30px;
+
+    margin-right: 20px;
+}
+
+.contact-right{
+    flex-basis: 60%;
+}
