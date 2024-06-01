@@ -1,5 +1,7 @@
 const selectionChoises = document.getElementsByClassName("selection-choise")
 const infoSection = document.getElementsByClassName("info-section")
+const easterEggText = document.getElementById("easter-egg-text")
+const soundToPlay = new Audio('audio/hee-hee.mp3');
 
 function SwitchSelection(){
     for (var i = 0; i < selectionChoises.length; i++){
@@ -19,3 +21,7 @@ function SwitchSelection(){
 for (var i = 0; i < selectionChoises.length; i++){
     selectionChoises[i].addEventListener("click", SwitchSelection)
 }
+
+easterEggText.addEventListener("click", function(){
+    soundToPlay.play();
+})
