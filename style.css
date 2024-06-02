@@ -38,6 +38,13 @@ nav{
     align-items: center;
 }
 
+nav .fa-solid{
+    font-size: 30px;
+    margin: 20px 20px;
+
+    display: none;
+}
+
 #title{
     font-size: 35px;
 }
@@ -516,19 +523,6 @@ footer{
 
 /* Media Queries */
 
-.fa-bars{
-    font-size: 50px;
-
-    display: none;
-}
-
-.fa-x{
-    font-size: 30px;
-    margin: 20px 20px;
-
-    display: none;
-}
-
 @media only screen and (max-width: 1640px) {
     #info{
         flex-basis: 100%;
@@ -559,11 +553,15 @@ footer{
         margin-top: 250px;
     }
 
-    .fa-bars{
+    nav .fa-solid{
+        font-size: 50px;
+    
         display: initial;
     }
 
-    .fa-x{
+    .navigation-ul i{
+        font-size: 30px;
+
         display: inline-block;
     }
     
