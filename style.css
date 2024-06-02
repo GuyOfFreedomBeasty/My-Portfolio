@@ -494,8 +494,6 @@ form textarea{
     color: white;
     font-size: 18px;
     font-weight: 600;
-
-    height: 60px;
 }
 
 #msg{
@@ -555,6 +553,10 @@ footer{
 }
 
 @media only screen and (max-width: 1300px) {
+    #header{
+        background-image: url(images/MidMobileBackground.jpg);
+    }
+
     #info{
         flex-basis: 100%;
     }
@@ -570,9 +572,7 @@ footer{
     }
 
     #header{
-        background-image: url(images/MidMobileBackground.jpg);
-
-        background-position: 92%;
+        background-image: url(images/MobileBackground.jpg);
     }
 
     #info h1{
@@ -581,7 +581,7 @@ footer{
     }
 
     .eyecatcher{
-        margin-top: 40%;
+        margin-top: 90%;
     }
 
     nav .fa-solid{
@@ -716,7 +716,34 @@ footer{
         font-size: 40px;
     }
 
+    .btn.btn2{
+        font-size: 40px;
+        
+        padding: 15px 60px;
+    }
+
     .row{
         flex-direction: column;
+    }
+
+    .contact-left h1{
+        font-size: 100px;
+    }
+
+    .contact-left li i{
+        margin: 50px 0px;
+        font-size: 55px;
+    }
+
+    .contact-right input{
+        height: 90px;
+
+        font-size: 40px;
+    }
+
+    .contact-right textarea{
+        height: 400px;
+
+        font-size: 40px;
     }
 }
