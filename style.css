@@ -400,6 +400,8 @@ nav li a{
 .btn:hover{
     background: #00ced1;
     color: black;
+
+    cursor: pointer;
 }
 
 /* Contact Me */
