@@ -270,6 +270,21 @@ nav li a{
     transform: translateY(-7px);
 }
 
+.services-list .not-available{
+    position: absolute;
+
+    color: red;
+    opacity: .6;
+    font-size: 90px;
+    font-weight: 800;
+
+    transform: rotateZ(-25deg);
+    vertical-align: middle;
+
+    justify-self: center;
+    align-self: center;
+}
+
 .services-list li h1{
     font-size: 40px;
     font-weight: 600;
@@ -326,10 +341,23 @@ nav li a{
     background-image: url(images/ProfilePicture.png);
     background-repeat: no-repeat;
     background-position: bottom;
+    background-size: cover;
     background-color: #292929;
     opacity: .8;
 
     transition: .3s;
+}
+
+#portfolio .first-portfolio{
+    background-image: url(images/French\ Rivera.jpg);
+}
+
+#portfolio .second-portfolio{
+    background-image: url(images/Restaurant\ Business\ Game\ Pic.jpg);
+}
+
+#portfolio .third-portfolio{
+    background-image: url(images/Untitled\ hockey\ game.jpg);
 }
 
 #portfolio li div{
