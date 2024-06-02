@@ -270,21 +270,6 @@ nav li a{
     transform: translateY(-7px);
 }
 
-.services-list .not-available{
-    position: absolute;
-
-    color: red;
-    opacity: .6;
-    font-size: 90px;
-    font-weight: 800;
-
-    transform: rotateZ(-25deg);
-    vertical-align: middle;
-
-    justify-self: center;
-    align-self: center;
-}
-
 .services-list li h1{
     font-size: 40px;
     font-weight: 600;
@@ -524,4 +509,42 @@ footer{
 
 #easter-egg-text:hover{
     cursor: pointer;
+}
+
+/* Media Queries */
+
+
+.fa-bars{
+    font-size: 50px;
+
+    display: none;
+}
+
+@media only screen and (max-width: 1075px) {
+    #header{
+        background-image: url(images/MidMobileBackground.jpg);
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #header{
+        background-image: url(images/MobileBackground.jpg);
+    }
+
+    .eyecatcher{
+        margin-top: 250px;
+    }
+
+    .navigation-ul{
+        /* display: none; */
+
+        z-index: 100;
+        top: 0;
+        right: 0;
+        position: fixed;
+        background-color: #363636;
+
+        width: 200px;
+        height: 100vh;
+    }
 }
