@@ -287,7 +287,7 @@ nav li a{
 
 .services-list li p{
     margin-top: 25px;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 450;
 
     margin-bottom: 20px;
@@ -600,6 +600,14 @@ footer{
     .services-list li{
         margin: 0;
         margin-top: 15px;
+    }
+
+    #about .pfp{
+        display: inline;
+
+        margin: auto;
+        height: 400px;
+        width: 100%;
     }
 
     #portfolio ul{
