@@ -71,6 +71,8 @@ nav li::after{
     bottom: -4px;
     left: 0;
 
+    z-index: 1;
+
     transition: .2s;
 }
 
@@ -142,6 +144,7 @@ nav li a{
     background-image: url(images/ProfilePicture.png);
     background-repeat: no-repeat;
     background-position: bottom;
+    background-size: cover;
 }
 
 #info{
@@ -513,38 +516,109 @@ footer{
 
 /* Media Queries */
 
-
 .fa-bars{
     font-size: 50px;
 
     display: none;
 }
 
-@media only screen and (max-width: 1075px) {
-    #header{
-        background-image: url(images/MidMobileBackground.jpg);
+.fa-x{
+    font-size: 30px;
+    margin: 20px 20px;
+
+    display: none;
+}
+
+@media only screen and (max-width: 1640px) {
+    #info{
+        flex-basis: 100%;
+    }
+
+    #about .pfp{
+        display: inline;
+
+        margin: auto;
+        width: 700px;
+    }
+
+    #portfolio li{
+        height: 400px;
+    }
+
+    #portfolio li p{
+        font-size: 15px;
     }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1075px) {
     #header{
-        background-image: url(images/MobileBackground.jpg);
+        background-image: url(images/MidMobileBackground.jpg);
     }
 
     .eyecatcher{
         margin-top: 250px;
     }
 
-    .navigation-ul{
-        /* display: none; */
+    .fa-bars{
+        display: initial;
+    }
 
+    .fa-x{
+        display: inline-block;
+    }
+    
+    .navigation-ul{
         z-index: 100;
         top: 0;
-        right: 0;
+        right: -200px;
         position: fixed;
         background-color: #363636;
-
+    
         width: 200px;
         height: 100vh;
+    
+        transition: right .2s;
+        display: initial;
+    }
+
+    .navigation-ul li{
+        font-size: 30px;
+        background-color: #252525;
+        padding: 20px;
+
+        margin: 0;
+        width: 100%;
+    }
+
+    #info{
+        flex-basis: 100%;
+    }
+
+    .services-list{
+        flex-direction: column;
+        font-size: 22px;
+    }
+    
+    .services-list li{
+        margin: 0;
+        margin-top: 15px;
+    }
+
+    #portfolio ul{
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    #portfolio li{
+        width: 80%;
+        height: 400px;
+
+        margin: 0;
+        margin-top: 30px;
+    }
+
+    .row{
+        flex-direction: column;
     }
 }
