@@ -23,7 +23,7 @@ html{
     width: 100%;
     height: 100vh;
 
-    background-image: url(Images/HeaderBackground.jpg); /* add a good background image later */
+    background-image: url(images/HeaderBackground.jpg); /* add a good background image later */
     background-position: center;
     background-size: cover;
 }
