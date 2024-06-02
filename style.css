@@ -434,6 +434,9 @@ nav li a{
     margin-right: 10px;
 }
 
+.contact-left a{
+    text-decoration: none;
+}
 .contact-left ul{
     display: flex;
     list-style: none;
