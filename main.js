@@ -36,5 +36,5 @@ openBarMenu.addEventListener("click", function(){
 })
 
 closeBarMenu.addEventListener("click", function(){
-    navUl.style.right = "-200px"
+    navUl.style.right = "-400px"
 })

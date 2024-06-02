@@ -565,21 +565,36 @@ footer{
 }
 
 @media only screen and (max-width: 1075px) {
+    #title a{
+        font-size: 65px;
+    }
+
     #header{
         background-image: url(images/MidMobileBackground.jpg);
+
+        background-position: 92%;
+    }
+
+    #info h1{
+        font-size: 100px;
+        margin-bottom: 20px;
     }
 
     .eyecatcher{
-        margin-top: 250px;
+        margin-top: 40%;
     }
 
     nav .fa-solid{
-        font-size: 50px;
+        font-size: 60px;
+
+        position: relative;
+        right: -75px;
     
         display: initial;
     }
 
     .navigation-ul i{
+        position: initial;
         font-size: 30px;
 
         display: inline-block;
@@ -588,33 +603,48 @@ footer{
     .navigation-ul{
         z-index: 100;
         top: 0;
-        right: -200px;
+        right: -400px;
         position: fixed;
         background-color: #363636;
     
-        width: 200px;
+        width: 400px;
         height: 100vh;
     
-        transition: right .2s;
+        transition: right .3s;
         display: initial;
     }
 
     .navigation-ul li{
-        font-size: 30px;
+        font-size: 40px;
         background-color: #252525;
-        padding: 20px;
+        padding: 40px;
 
         margin: 0;
         width: 100%;
     }
 
-    /* #info{
-        flex-basis: 100%;
+    .eyecatcher .skill-preview{
+        font-size: 70px;
     }
 
-    #about .pfp{
+    .eyecatcher .introduction{
+        font-size: 100px;
+    }
+
+    #aka{
         display: none;
-    } */
+    }
+
+    #info .selection-choise{
+        margin-top: 50px;
+        margin-bottom: 10px;
+        margin-right: 50px;
+        font-size: 50px;
+    }
+
+    #services .title{
+        font-size: 100px;
+    }
 
     .services-list{
         flex-direction: column;
@@ -627,6 +657,24 @@ footer{
         background-position: top;
     }
 
+    .services-list li h1{
+        font-size: 60px;
+    }
+
+    .services-list li p{
+        margin-top: 10px;
+        font-size: 32px;
+    }
+
+    .services-list li a{
+        margin-top: 5px;
+        font-size: 25px;
+    }
+
+    #portfolio .title{
+        font-size: 100px;
+    }
+
     #portfolio ul{
         flex-direction: column;
 
@@ -634,11 +682,38 @@ footer{
     }
 
     #portfolio li{
-        width: 80%;
-        height: 400px;
+        background-position: center;
+
+        width: 95%;
+        height: 500px;
 
         margin: 0;
         margin-top: 30px;
+    }
+
+    #portfolio li{
+        background-position: center;
+
+        width: 95%;
+        height: 500px;
+
+        margin: 0;
+        margin-top: 30px;
+    }
+
+    #portfolio li h2{
+        font-size: 40px;
+
+        margin-top: 0;
+        text-align: center;
+    }
+
+    #portfolio li p{
+        font-size: 30px;
+    }
+
+    .btn{
+        font-size: 40px;
     }
 
     .row{
