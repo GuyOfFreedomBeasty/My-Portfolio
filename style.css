@@ -493,6 +493,11 @@ form textarea{
     height: 60px;
 }
 
+#msg{
+    margin-top: 15px;
+    color: green;
+}
+
 /* Footer */
 
 footer{

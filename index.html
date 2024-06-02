@@ -4,6 +4,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="images/Favicon.ico">
     <script src="https://kit.fontawesome.com/3e277c9e86.js" crossorigin="anonymous"></script>
+    <script defer src="main.js"></script>
+    <script defer src="contact-form.js"></script>
     <title>Beasty's Portfolio</title>
 </head>
 <body>
@@ -148,11 +150,12 @@
                     </ul>
                 </div>
                 <div class="contact-right">
-                    <form action="submit-to-google-sheet">
+                    <form name="submit-to-google-sheet">
                         <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="text" name="Email" placeholder="Your Email (Not Required)">
+                        <input type="email" name="Email" placeholder="Your Email (Not Required)">
                         <textarea name="Message" placeholder="Your Message" required></textarea>
                         <button type="submit" class="btn btn2">Submit</button>
+                        <p id="msg"></p>
                     </form>
                 </div>
             </div>
@@ -162,7 +165,5 @@
     <!-- Footer -->
 
     <footer>Copyright © GuyOfFreedom. All rights reserved.</footer>
-
-    <script src="main.js"></script>
 </body>
 </html>
