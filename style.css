@@ -23,7 +23,7 @@ html{
     width: 100%;
     height: 100vh;
 
-    background-image: url(Images/BackgroundImage.jpg); /* add a good background image later */
+    background-image: url(Images/HeaderBackground.jpg); /* add a good background image later */
     background-position: center;
     background-size: cover;
 }
@@ -525,22 +525,32 @@ footer{
 
 @media only screen and (max-width: 1640px) {
     #info{
-        flex-basis: 100%;
+        flex-basis: 55%;
     }
 
     #about .pfp{
-        display: inline;
+        width: 450px;
+        height: 550px;
 
-        margin: auto;
-        width: 700px;
+        margin-top: 6%;
     }
 
     #portfolio li{
-        height: 400px;
+        height: 400px;  
     }
 
     #portfolio li p{
         font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    #info{
+        flex-basis: 100%;
+    }
+
+    #about .pfp{
+        display: none;
     }
 }
 
@@ -588,9 +598,13 @@ footer{
         width: 100%;
     }
 
-    #info{
+    /* #info{
         flex-basis: 100%;
     }
+
+    #about .pfp{
+        display: none;
+    } */
 
     .services-list{
         flex-direction: column;
@@ -600,14 +614,7 @@ footer{
     .services-list li{
         margin: 0;
         margin-top: 15px;
-    }
-
-    #about .pfp{
-        display: inline;
-
-        margin: auto;
-        height: 400px;
-        width: 100%;
+        background-position: top;
     }
 
     #portfolio ul{
