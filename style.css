@@ -21,7 +21,7 @@ html{
 #header{
     color: white;
     width: 100%;
-    height: 100vh;
+    height: 100svh;
 
     background-image: url(images/HeaderBackground.jpg); /* add a good background image later */
     background-position: center;
